@@ -7,9 +7,8 @@ var mongoose = require('mongoose')
 
 // connect to database
 module.exports = {
-    // initialize DB
     startup: function (dbToUse) {
-        mongoose.connect('mongodb://'+dbToUse);
+        mongoose.connect(dbToUse);
         // Check connection to mongoDB
         mongoose.connection.on('open', function () {
             console.log('We have connected to mongodb');
@@ -177,5 +176,4 @@ module.exports = {
         });
         return defer.promise;
     }
-
 }
