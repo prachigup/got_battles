@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html ng-app="GotBattlesApp">
+<head>
+    <title>GOT Battles</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+
+    <header class="navbar navbar-inner navbar-fixed-top">
+        <nav class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">
+                    <span class="appTitle">GOT Battles</span>
+                </a>
+            </div>
+            <div class="nav-container">
+
+                <!-- With menu-highlighter directive -->
+                <ul class="nav navbar-nav nav-pills navBarPadding">
+                    <li><a href="#/list">List Places</a></li>
+                    <li><a href="#/count">Count</a></li>
+                    <li><a href="#/stats">Stats</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                     <div ng-view style="position: relative; padding-top: 50px;"></div>
+                </div>
+            </div>
+
+        </div>
+    
+
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner footer">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Got Battles
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- External scripts -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    
+    <!-- Internal scripts -->
+    <script src="/battlesApp/app.js"></script>
+    <script src="/battlesApp/ListController.js"></script>
+    <script src="/battlesApp/CountController.js"></script>
+    <script src="/battlesApp/StatsController.js"></script>
+</body>
+</html>
+
+

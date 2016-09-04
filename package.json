@@ -1,0 +1,21 @@
+{
+  "name": "got_battles",
+  "author": "Prachi Gupta",
+  "version": "1.0.0",
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "csurf": "^1.8.3",
+    "errorhandler": "^1.4.2",
+    "express": "4.13.3",
+    "express-session": "^1.13.0",
+    "jade": ">=1.11.0",
+    "mongoose": ">=3.8",
+    "q": "^1.4.1"
+  },
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "main": "server/server.js"
+}
